@@ -27,7 +27,7 @@ jobs:
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
                        name="Mint_Kernel | GULB_S | V1 by Dr.DE"         \
-                       toolchain=cruel           \
+                       toolchain=$TOOLCHAIN      \
                        +magisk=v24.3             \
                        +nohardening              \
                        +ttl                      \
