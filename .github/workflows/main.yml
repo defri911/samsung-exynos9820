@@ -26,11 +26,12 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="Mint_Kernel-by.Dr_DE.V1"  \
+                       name="De.kernel_v1.Mint"  \
                        os_patch_level=2022-02    \
                        toolchain=$TOOLCHAIN      \
                        +magisk=v24.3             \
                        +nohardening              \
+                       +boeffla_wl_blocker       \
                        +ttl                      \
                        +cifs                     \
                        +sdfat                    \
